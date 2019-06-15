@@ -1,29 +1,43 @@
 /*
-	Lens by HTML5 UP
+	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Main */
+/* Spotlights */
 
-	#main {
-		opacity: 1 !important;
-		right: 0 !important;
+	.spotlights > section > .image:before {
+		opacity: 0 !important;
 	}
 
-	body:before {
-		content: 'Javascript is disabled :(';
-		display: block;
-		position: absolute;
-		top: 50%;
-		width: calc(100% - 22.5em * 0.333333333);
-		height: 4em;
-		margin-top: -2em;
-		color: #282828;
-		cursor: default;
-		font-size: 3em;
-		line-height: 4em;
-		text-align: center;
-		white-space: nowrap;
-		left: 0;
+	.spotlights > section > .content > .inner {
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		-ms-transform: none !important;
+		transform: none !important;
+		opacity: 1 !important;
+	}
+
+/* Wrapper */
+
+	.wrapper > .inner {
+		opacity: 1 !important;
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		-ms-transform: none !important;
+		transform: none !important;
+	}
+
+/* Sidebar */
+
+	#sidebar > .inner {
+		opacity: 1 !important;
+	}
+
+	#sidebar nav > ul > li {
+		-moz-transform: none !important;
+		-webkit-transform: none !important;
+		-ms-transform: none !important;
+		transform: none !important;
+		opacity: 1 !important;
 	}

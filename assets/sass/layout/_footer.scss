@@ -1,5 +1,5 @@
 ///
-/// Lens by HTML5 UP
+/// Hyperspace by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -7,21 +7,32 @@
 /* Footer */
 
 	#footer {
-		@include padding(2.25em, 2.25em);
+		#sidebar + #wrapper + & {
+			margin-left: _size(sidebar-width);
 
-		.copyright {
-			list-style: none;
-			padding: 0;
+			@include breakpoint('<=large') {
+				margin-left: 0;
+			}
+		}
 
-			li {
-				display: inline-block;
-				font-size: 0.8em;
-				margin-left: 0.35em;
-				padding: 0;
+		> .inner {
+			a {
+				border-bottom-color: _palette(border);
 
-				&:first-child {
-					margin-left: 0;
+				&:hover {
+					border-bottom-color: transparent;
 				}
+			}
+
+			.menu {
+				font-size: 0.8em;
+				color: _palette(border);
+			}
+		}
+
+		#header + #wrapper + & {
+			> .inner {
+				margin: 0 auto;
 			}
 		}
 	}
